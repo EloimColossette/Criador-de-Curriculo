@@ -202,7 +202,7 @@ class SistemaNF(tk.Toplevel):
 
         # Configurar colunas do Treeview
         colunas = ["Data", "NF", "Produto", "Peso", "Cliente", "CNPJ/CPF", "Base Produto", "Observação"]
-        largura_coluna = [80, 50, 350, 100, 400, 130, 200, 120]  # ajuste as larguras conforme necessário
+        largura_coluna = [80, 50, 400, 100, 400, 130, 200, 120]  # ajuste as larguras conforme necessário
         for i, coluna in enumerate(colunas):
             self.tree.heading(coluna, text=coluna)
             self.tree.column(coluna, width=largura_coluna[i], anchor="center", stretch=True)
